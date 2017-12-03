@@ -133,7 +133,7 @@
                         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Промвооружение</p>
                         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Спецодежда</p>
                         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Подшипники</p>
-                        <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Тросы, канаты</p>
+                        <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Троса, канаты</p>
                     </div>
                     <div class="col-md-4">
                         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Аварийно-спасательное имущество</p>
@@ -146,7 +146,7 @@
                     <div class="col-md-4">
                         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Транспортерная лента</p>
                         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>РМУ</p>
-                        <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Камбузоное и буфетное оборудование</p>
+                        <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Камбузное и буфетное оборудование</p>
                         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Бытовая химия</p>
                         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>Судовая арматура</p>
                     </div>
@@ -170,7 +170,7 @@
                     <div class="col-md-6 col-md-offset-1">
                         <ol>
                             <li>Ваша Заявка приходит к нам на Email</li>
-                            <li>Расцениваем Заявку, при необходимости уточняем необходимые детали</li>
+                            <li>Расцениваем Заявку, при необходимости уточняем детали</li>
                             <li>Отправляем Коммерческое предложение (Quotation)</li>
                             <li>После подтверждения Коммерческого предложения или отдельных позиций, выставляем счет (Invoice), уточняя и согласовывая условия оплаты</li>
                             <li>Доставка оплаченного снабжения,оборудования в установленные сроки и место нахождения судна, берегового предприятия.</li>
@@ -259,7 +259,9 @@
         <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
         <script>
         $( "#menu" ).click(function() {
-          $( "#menu" ).fadeOut();
+          if ($(".mainnav").width() < 806) {
+          	$( "#menu" ).fadeOut();
+          }
         });
         </script>
 
